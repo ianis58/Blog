@@ -1,0 +1,12 @@
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\bin\Debug\netcoreapp2.1\web.config
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\bin\Debug\netcoreapp2.1\GiraffeApp.deps.json
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\bin\Debug\netcoreapp2.1\GiraffeApp.runtimeconfig.json
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\bin\Debug\netcoreapp2.1\GiraffeApp.runtimeconfig.dev.json
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\bin\Debug\netcoreapp2.1\GiraffeApp.dll
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\bin\Debug\netcoreapp2.1\GiraffeApp.pdb
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\obj\Debug\netcoreapp2.1\GiraffeApp.fsprojAssemblyReference.cache
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\obj\Debug\netcoreapp2.1\GiraffeApp.AssemblyInfoInputs.cache
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\obj\Debug\netcoreapp2.1\GiraffeApp.AssemblyInfo.fs
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\obj\Debug\netcoreapp2.1\GiraffeApp.dll
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\obj\Debug\netcoreapp2.1\GiraffeApp.pdb
+C:\Users\Ianis\VSCodeWorkspace\GiraffeApp\src\GiraffeApp\obj\Debug\netcoreapp2.1\GiraffeApp.genruntimeconfig.cache
