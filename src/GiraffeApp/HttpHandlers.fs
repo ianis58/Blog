@@ -38,9 +38,9 @@ module GiraffeApp.HttpHandlers
         fun (next : HttpFunc) (ctx : HttpContext) ->
             task {
                 let author = {
-                    FirstName = "Ianis"
-                    LastName = "Rieuf"
-                    UserName = "ianis58"
+                    FirstName = "Romain"
+                    LastName = "Vitt"
+                    UserName = "romvitt"
                     Registered = DateTime.Now.AddYears(-1).AddDays(115.0)
                 }
 
@@ -63,7 +63,7 @@ module GiraffeApp.HttpHandlers
                 ]
 
                 let article = {
-                    Title = "test de titre"
+                    Title = "Quel est le meilleur smartphone du marché en 2020 ?"
                     Paragraphs = paragraphs
                     Date = DateTime.Now
                     Author = author
