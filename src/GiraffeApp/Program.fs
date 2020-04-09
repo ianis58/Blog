@@ -20,10 +20,11 @@ let webApp =
                 GET >=> choose [
                     route "/hello" >=> handleGetHello
                     routef "/hello/%s" handleGetHelloWithName
+                    route "/article" >=> handleGetArticle
                 ]
             ])
-        route "/" >=> handleGetIndex
-        setStatusCode 404 >=> text "Not Found" ]
+        route "/" >=> handleGetIndex ]
+        //setStatusCode 404 >=> text "Not Found" ]
 
 // ---------------------------------
 // Error handler
@@ -48,6 +49,7 @@ let configureApp (app : IApplicationBuilder) =
     (match env.IsDevelopment() with
     | true  -> app.UseDeveloperExceptionPage()
     | false -> app.UseGiraffeErrorHandler errorHandler)
+        .UseStaticFiles()
         .UseHttpsRedirection()
         .UseCors(configureCors)
         .UseGiraffe(webApp)
@@ -64,6 +66,7 @@ let configureLogging (builder : ILoggingBuilder) =
 [<EntryPoint>]
 let main _ =
     WebHostBuilder()
+        .UseWebRoot("WebRoot")
         .UseKestrel()
         .UseIISIntegration()
         .Configure(Action<IApplicationBuilder> configureApp)
