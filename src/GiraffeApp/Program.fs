@@ -20,9 +20,9 @@ let webApp =
                 GET >=> choose [
                     route "/hello" >=> handleGetHello
                     routef "/hello/%s" handleGetHelloWithName
-                    route "/article" >=> handleGetArticle
                 ]
             ])
+        route "/article" >=> handleGetArticle
         route "/" >=> handleGetIndex ]
         //setStatusCode 404 >=> text "Not Found" ]
 

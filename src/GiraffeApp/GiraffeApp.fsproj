@@ -6,13 +6,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Models.fs" />
-    <Compile Include="Views.fs" />
+    <Compile Include="LayoutViews.fs" />
+    <Compile Include="UtilitiesViews.fs" />
+    <Compile Include="ArticleViews.fs" />
+    <Compile Include="NavigationViews.fs" />
+    <Compile Include="ArticleData.fs" />
     <Compile Include="HttpHandlers.fs" />
     <None Include="web.config" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.App" Version="5.0.*" />
     <PackageReference Include="Giraffe" Version="3.4.*" />
     <PackageReference Include="TaskBuilder.fs" Version="2.1.*" />
   </ItemGroup>

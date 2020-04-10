@@ -1,9 +1,7 @@
-namespace GiraffeApp
+namespace GiraffeApp.Views
 
-module LayoutViews =
+module Layout =
 
-    open System
-    open System.Globalization
     open Giraffe.GiraffeViewEngine
 
     let layout (content: XmlNode list) =
@@ -11,9 +9,6 @@ module LayoutViews =
             head [] [
                 title []  [ str "GiraffeApp" ]
                 link [ _rel "stylesheet"; _href "/tailwind.css" ]
-                link [ _rel "stylesheet"; _href "/base.css" ]
-                link [ _rel "stylesheet"; _href "/components.css" ]
-                link [ _rel "stylesheet"; _href "/utilities.css" ]
             ]
             body [ _class "bg-gray-100" ] content
         ]
