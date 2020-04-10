@@ -19,4 +19,8 @@
     <PackageReference Include="Giraffe" Version="3.4.*" />
     <PackageReference Include="TaskBuilder.fs" Version="2.1.*" />
   </ItemGroup>
+  <Target Name="CopyCssToWebRoot" AfterTargets="AfterBuild">
+    <Copy SourceFiles="blog.css" DestinationFolder="$(OutDir)/WebRoot" />
+    <Copy SourceFiles="../../node_modules/tailwindcss/dist/tailwind.css" DestinationFolder="$(OutDir)/WebRoot" />
+  </Target>
 </Project>

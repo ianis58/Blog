@@ -9,6 +9,7 @@ module Layout =
             head [] [
                 title []  [ str "GiraffeApp" ]
                 link [ _rel "stylesheet"; _href "/tailwind.css" ]
+                link [ _rel "stylesheet"; _href "/blog.css" ]
             ]
             body [ _class "bg-gray-100" ] content
         ]
