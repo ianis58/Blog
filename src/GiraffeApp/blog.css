@@ -1,3 +1,21 @@
 ::selection {
     background-color: rgba(102,153,153,0.3);
 }
+
+.tag::selection {
+    background-color: rgba(246,246,246,0.5);
+}
+
+.tag:hover {
+    background-color: rgb(247, 250, 252);
+    color: black;
+    border: 1px solid black;
+}
+
+.menu:hover {
+    border-style: none;
+}
+
+.menu-item:hover {
+    border-bottom: 1px solid black;
+}
