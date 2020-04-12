@@ -11,7 +11,6 @@ module Articles =
         FirstName = "Romain"
         LastName = "Vitt"
         UserName = "romvitt"
-        Registered = DateTime.Now.AddYears(-1).AddDays(115.0)
     }
 
     let tags = [

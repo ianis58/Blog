@@ -1,4 +1,4 @@
-namespace BlogApp.Models
+namespace BlogDal.Entities
 
 module Author =
 
@@ -7,7 +7,10 @@ module Author =
     [<CLIMutable>]
     type Author =
         {
+            AuthorId : Int32
             FirstName : String
             LastName : String
             UserName : String
+            CreatedDate : DateTime
+            UpdatedDate : DateTime
         }

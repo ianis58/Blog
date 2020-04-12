@@ -1,11 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
+    <Compile Include="AuthorEntity.fs" />
+    <Compile Include="TagEntity.fs" />
+    <Compile Include="ArticleEntity.fs" />
     <Compile Include="Library.fs" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+  </ItemGroup>
 </Project>
