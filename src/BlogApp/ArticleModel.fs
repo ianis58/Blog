@@ -4,6 +4,7 @@ module Article =
 
     open System
     open Author
+    open Tag
 
     [<CLIMutable>]
     type Article =
@@ -11,6 +12,6 @@ module Article =
             Title : String
             Date : DateTime
             Author : Author
-            Tags : String list
+            Tags : Tag list
             Paragraphs : String list
         }

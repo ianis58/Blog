@@ -5,6 +5,7 @@ module Article =
     open System
     open Giraffe.GiraffeViewEngine
     open BlogApp.Models.Author
+    open BlogApp.Models.Tag
     open BlogApp.Models.Article
     open BlogApp.Views.Layout
     open BlogApp.Views.Utilities
@@ -16,11 +17,11 @@ module Article =
                 |> List.map (fun paragraph -> p [ _class "my-5" ] [ str paragraph ] )
         ]
 
-    let partialTags (tags : String list) =
+    let partialTags (tags : Tag list) =
         div [ _class "text-right text-white italic" ] [
             yield!
                 tags
-                |> List.map (fun tag -> span [ _class "bg-black mx-2 p-1 tag select-none border-transparent border" ] [ sprintf "#%s" tag |> str ] )
+                |> List.map (fun tag -> span [ _class "bg-black mx-2 p-1 tag select-none border-transparent border" ] [ sprintf "#%s" tag.Label |> str ] )
         ]
     
     let partialAuthorFullName (author : Author) = sprintf "%s %s" author.FirstName author.LastName

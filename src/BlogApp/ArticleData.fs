@@ -4,6 +4,7 @@ module Articles =
 
     open System
     open BlogApp.Models.Author
+    open BlogApp.Models.Tag
     open BlogApp.Models.Article
 
     let author = {
@@ -14,12 +15,12 @@ module Articles =
     }
 
     let tags = [
-        "it"
-        "actu"
-        "tests"
-        "tryin"
-        "f#"
-        "dotnetcore"
+        { Label = "it" }
+        { Label = "actu" }
+        { Label = "tests" }
+        { Label = "tryin" }
+        { Label = "f#" }
+        { Label = "dotnetcore" }
     ]
 
     let paragraphs = [

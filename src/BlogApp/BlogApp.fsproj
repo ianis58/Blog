@@ -6,6 +6,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AuthorModel.fs" />
+    <Compile Include="TagModel.fs" />
     <Compile Include="ArticleModel.fs" />
     <Compile Include="LayoutViews.fs" />
     <Compile Include="UtilitiesViews.fs" />
