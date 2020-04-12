@@ -1,9 +1,9 @@
-namespace GiraffeApp.Data
+namespace BlogApp.Data
 
 module Articles =
 
     open System
-    open GiraffeApp.Models
+    open BlogApp.Models
 
     let author = {
         FirstName = "Romain"

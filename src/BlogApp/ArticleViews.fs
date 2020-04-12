@@ -1,12 +1,12 @@
-namespace GiraffeApp.Views
+namespace BlogApp.Views
 
 module Article =
 
     open System
     open Giraffe.GiraffeViewEngine
-    open GiraffeApp.Models
-    open GiraffeApp.Views.Layout
-    open GiraffeApp.Views.Utilities
+    open BlogApp.Models
+    open BlogApp.Views.Layout
+    open BlogApp.Views.Utilities
 
     let partialContent (paragraphs : String list) =
         div [ _class "text-lg font-serif text-black leading-normal text-justify" ] [

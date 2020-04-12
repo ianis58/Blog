@@ -1,4 +1,4 @@
-namespace GiraffeApp.Views
+namespace BlogApp.Views
 
 module Layout =
 
@@ -7,7 +7,7 @@ module Layout =
     let layout (content: XmlNode list) =
         html [] [
             head [] [
-                title []  [ str "GiraffeApp" ]
+                title []  [ str "Blog" ]
                 link [ _rel "stylesheet"; _href "/tailwind.css" ]
                 link [ _rel "stylesheet"; _href "/blog.css" ]
             ]

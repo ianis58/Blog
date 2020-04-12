@@ -1,11 +1,11 @@
-module GiraffeApp.HttpHandlers
+module BlogApp.HttpHandlers
 
     open Microsoft.AspNetCore.Http
     open FSharp.Control.Tasks.V2.ContextInsensitive
     open Giraffe
-    open GiraffeApp.Models
-    open GiraffeApp.Views.Article
-    open GiraffeApp.Data.Articles
+    open BlogApp.Models
+    open BlogApp.Views.Article
+    open BlogApp.Data.Articles
 
     let handleGetHello =
         fun (next : HttpFunc) (ctx : HttpContext) ->

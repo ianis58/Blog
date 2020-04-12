@@ -1,4 +1,4 @@
-namespace GiraffeApp.Views
+namespace BlogApp.Views
 
 module Utilities =
 

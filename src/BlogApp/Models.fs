@@ -1,4 +1,4 @@
-namespace GiraffeApp
+namespace BlogApp
 
 module Models =
 

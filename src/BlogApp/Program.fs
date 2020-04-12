@@ -1,4 +1,4 @@
-module GiraffeApp.App
+module BlogApp.App
 
 open System
 open Microsoft.AspNetCore.Builder
@@ -8,7 +8,7 @@ open Microsoft.Extensions.Logging
 open Microsoft.Extensions.DependencyInjection
 open Microsoft.Extensions.Hosting
 open Giraffe
-open GiraffeApp.HttpHandlers
+open BlogApp.HttpHandlers
 
 // ---------------------------------
 // Web app
