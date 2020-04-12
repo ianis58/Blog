@@ -5,7 +5,8 @@
     <TargetFramework>netcoreapp5.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Models.fs" />
+    <Compile Include="AuthorModel.fs" />
+    <Compile Include="ArticleModel.fs" />
     <Compile Include="LayoutViews.fs" />
     <Compile Include="UtilitiesViews.fs" />
     <Compile Include="ArticleViews.fs" />

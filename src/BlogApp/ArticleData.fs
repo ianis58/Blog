@@ -3,7 +3,8 @@ namespace BlogApp.Data
 module Articles =
 
     open System
-    open BlogApp.Models
+    open BlogApp.Models.Author
+    open BlogApp.Models.Article
 
     let author = {
         FirstName = "Romain"

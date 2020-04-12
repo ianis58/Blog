@@ -15,17 +15,13 @@ open BlogApp.HttpHandlers
 // ---------------------------------
 
 let webApp =
-    choose [
-        subRoute "/api"
-            (choose [
-                GET >=> choose [
-                    route "/hello" >=> handleGetHello
-                    routef "/hello/%s" handleGetHelloWithName
-                ]
-            ])
-        route "/article" >=> handleGetArticle
-        route "/" >=> handleGetIndex ]
-        //setStatusCode 404 >=> text "Not Found" ]
+    choose
+        [
+            GET >=> choose [
+                route "/" >=> handleGetIndex
+                setStatusCode 404 >=> text "Not Found"
+            ]
+        ]
 
 // ---------------------------------
 // Error handler
@@ -70,6 +66,7 @@ let main _ =
         .UseWebRoot("WebRoot")
         .UseKestrel()
         .UseIISIntegration()
+        .UseUrls("https://localhost")
         .Configure(Action<IApplicationBuilder> configureApp)
         .ConfigureServices(configureServices)
         .ConfigureLogging(configureLogging)

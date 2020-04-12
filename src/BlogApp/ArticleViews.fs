@@ -4,7 +4,8 @@ module Article =
 
     open System
     open Giraffe.GiraffeViewEngine
-    open BlogApp.Models
+    open BlogApp.Models.Author
+    open BlogApp.Models.Article
     open BlogApp.Views.Layout
     open BlogApp.Views.Utilities
 
